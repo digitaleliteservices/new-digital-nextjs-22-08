@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "../footer/page";
 import Hero from "../hero/page";
 import Navbar from "../navbar/page";
 import Services from "../services/page";
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <WhoWeWorkWith />
       <WhyChooseUs />
+      <Footer/>
     </div>
   );
 }
