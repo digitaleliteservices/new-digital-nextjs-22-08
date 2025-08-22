@@ -1,9 +1,19 @@
-"use client"
+"use client";
 
-export default function Home(){
-    return(
+import Hero from "../hero/page";
+import Navbar from "../navbar/page";
+import Services from "../services/page";
+import WhoWeWorkWith from "../whowework/page";
+import WhyChooseUs from "../whychooseus/page";
+
+export default function Home() {
+  return (
     <div>
-        <h1>Welcome to Home Page</h1>
+      <Navbar />
+      <Hero />
+      <Services />
+      <WhoWeWorkWith />
+      <WhyChooseUs />
     </div>
-    )
+  );
 }
