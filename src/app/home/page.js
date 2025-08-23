@@ -10,12 +10,12 @@ import WhyChooseUs from "../whychooseus/page";
 export default function Home() {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Hero />
       <Services />
       <WhoWeWorkWith />
       <WhyChooseUs />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
