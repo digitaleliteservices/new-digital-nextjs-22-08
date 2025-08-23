@@ -44,8 +44,7 @@ const Services = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-            src="/assets/services_bg_image.avif"
-        //   src="/assets/who-we-work_bg_image.avif"
+          src="/assets/services_bg_image.avif"
           alt="Services Background"
           className="w-full h-full object-cover"
         />
@@ -72,15 +71,15 @@ const Services = () => {
               key={index}
               className="group w-10/12 sm:w-11/12 min-h-[340px] mx-auto 
              rounded-3xl bg-gradient-to-b from-[#1a0b2e]/90 
-             to-[#0a0014]/90 p-6 shadow-lg hover:shadow-purple-500/40 
+             to-[#0a0014]/90 p-6 shadow-lg hover:shadow-orange-400/40 
              transition relative overflow-hidden flex flex-col"
             >
               {/* Title Badge */}
-              <span className="inline-block px-4 py-3 mb-6 rounded-full text-base font-bold bg-[#1f1f2e]/80 border-[0.5px] border-purple-500/50 text-purple-300">
+              <span className="inline-block px-4 py-3 mb-6 rounded-full text-base font-bold bg-[#1f1f2e]/80 border-[0.5px] border-orange-400/50 text-orange-300">
                 {service.title}
               </span>
 
-              {/* Bottom content (description + points + button) */}
+              {/* Bottom content */}
               <div className="mt-auto transition-all duration-500 group-hover:-translate-y-3">
                 {/* Description */}
                 <h3 className="text-lg font-semibold mb-4 leading-snug">
@@ -94,7 +93,7 @@ const Services = () => {
                       key={idx}
                       className="flex items-center gap-2 text-gray-300"
                     >
-                      <CheckCircle className="w-5 h-5 text-purple-400" />
+                      <CheckCircle className="w-5 h-5 text-cyan-400" />
                       <span>{point}</span>
                     </li>
                   ))}
@@ -104,7 +103,7 @@ const Services = () => {
                 <div className="flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <button
                     onClick={() => setActiveService(service)}
-                    className="px-6 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium shadow-lg hover:opacity-90"
+                    className="px-6 py-2 rounded-full bg-gradient-to-r from-orange-500 via-yellow-400 to-blue-500 text-white font-medium shadow-lg hover:opacity-90"
                   >
                     Get More
                   </button>
@@ -125,7 +124,6 @@ const Services = () => {
           ></div>
 
           {/* Drawer */}
-          {/* Drawer */}
           <div
             className="relative w-full sm:w-[480px] md:w-[520px] lg:w-[600px] 
   max-h-[85vh] bg-[#1a0b2e]/95 p-8 shadow-2xl 
@@ -141,7 +139,7 @@ const Services = () => {
             </button>
 
             {/* Title */}
-            <span className="inline-block px-4 py-2 mb-6 rounded-full text-base font-bold bg-[#1f1f2e]/80 border border-purple-500/50 text-purple-300">
+            <span className="inline-block px-4 py-2 mb-6 rounded-full text-base font-bold bg-[#1f1f2e]/80 border border-orange-400/50 text-orange-300">
               {activeService.title}
             </span>
 
@@ -154,7 +152,7 @@ const Services = () => {
             <ul className="space-y-5">
               {activeService.points.map((point, idx) => (
                 <li key={idx} className="flex items-start gap-3 text-gray-200">
-                  <CheckCircle className="w-5 h-5 text-purple-400 mt-1" />
+                  <CheckCircle className="w-5 h-5 text-cyan-400 mt-1" />
                   <span>{point}</span>
                 </li>
               ))}

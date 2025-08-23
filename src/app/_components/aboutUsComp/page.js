@@ -104,7 +104,7 @@ const WhatSetsUsApart = () => {
 
       <div className="max-w-6xl mx-auto text-center mb-12">
         <span className="px-5 py-2 rounded-full bg-gradient-to-r from-purple-600/40 to-orange-500/40 text-sm sm:text-base inline-block mb-4">
-          💡 What sets us apart
+          💡 What Sets Us Apart
         </span>
         <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
           Built to deliver real impact
