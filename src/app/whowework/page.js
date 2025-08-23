@@ -71,12 +71,12 @@ const WhoWeWorkWith = () => {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#2ba7ff] via-[#ca45ff] to-[#fe881b]">
-            Who We Work With
-          </h2>
-          {/* <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold">
+          {/* <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] via-[#2C6DF6] to-[#FF8A00]">
             Who We Work With
           </h2> */}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold">
+            Who We Work With
+          </h2>
         </div>
 
         {/* Content Grid */}
@@ -88,37 +88,43 @@ const WhoWeWorkWith = () => {
               return (
                 <div
                   key={idx}
-                  className="flex items-start gap-3 bg-white/90 rounded-xl shadow-md p-4 sm:p-5 hover:shadow-lg transition-shadow duration-300"
+                  className="p-[3px] rounded-xl bg-gradient-to-r from-[#00E5FF]/60 via-[#2C6DF6]/60 to-[#FF8A00]/60"
                 >
-                  <Icon className="w-6 h-6 text-purple-500 shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900 text-base sm:text-lg mb-1">
-                      {partner.title}
-                    </h3>
-                    <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
-                      {partner.description.map((point, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-purple-400 mt-1 flex-shrink-0" />
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
+                  <div className="flex items-start gap-3 bg-white/95 rounded-xl shadow-md p-4 sm:p-5 hover:shadow-lg transition-shadow duration-300">
+                    {/* Gradient Icon (matches logo) */}
+                    <Icon className="w-6 h-6 shrink-0 mt-1 text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] via-[#2C6DF6] to-[#FF8A00]" />
+                    <div>
+                      <h3 className="font-semibold text-gray-900 text-base sm:text-lg mb-1">
+                        {partner.title}
+                      </h3>
+                      <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
+                        {partner.description.map((point, i) => (
+                          <li key={i} className="flex items-start gap-2">
+                            {/* Solid blue check for visibility */}
+                            <CheckCircle2 className="w-4 h-4 mt-1 flex-shrink-0 text-[#2C6DF6]" />
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               );
             })}
           </div>
 
-          {/* Center Column - Mandala Video */}
+          {/* Center Column - Mandala Video with gradient ring */}
           <div className="flex justify-center my-6 lg:my-0 lg:flex-1">
-            <video
-              src="/assets/!!MANDALA_20.webm"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full border-4 border-white/20 shadow-lg"
-            />
+            <div className="p-[3px] rounded-full bg-gradient-to-br from-[#00E5FF] via-[#2C6DF6] to-[#FF8A00] shadow-lg">
+              <video
+                src="/assets/!!MANDALA_20.webm"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full bg-white/10"
+              />
+            </div>
           </div>
 
           {/* Right Column */}
@@ -128,21 +134,23 @@ const WhoWeWorkWith = () => {
               return (
                 <div
                   key={idx}
-                  className="flex items-start gap-3 bg-white/90 rounded-xl shadow-md p-4 sm:p-5 hover:shadow-lg transition-shadow duration-300"
+                  className="p-[3px] rounded-xl bg-gradient-to-r from-[#00E5FF]/60 via-[#2C6DF6]/60 to-[#FF8A00]/60"
                 >
-                  <Icon className="w-6 h-6 text-purple-600 shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900 text-base sm:text-lg mb-1">
-                      {partner.title}
-                    </h3>
-                    <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
-                      {partner.description.map((point, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
+                  <div className="flex items-start gap-3 bg-white/95 rounded-xl shadow-md p-4 sm:p-5 hover:shadow-lg transition-shadow duration-300">
+                    <Icon className="w-6 h-6 shrink-0 mt-1 text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] via-[#2C6DF6] to-[#FF8A00]" />
+                    <div>
+                      <h3 className="font-semibold text-gray-900 text-base sm:text-lg mb-1">
+                        {partner.title}
+                      </h3>
+                      <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
+                        {partner.description.map((point, i) => (
+                          <li key={i} className="flex items-start gap-2">
+                            <CheckCircle2 className="w-4 h-4 mt-1 flex-shrink-0 text-[#2C6DF6]" />
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               );
@@ -152,20 +160,18 @@ const WhoWeWorkWith = () => {
 
         {/* Industries Section */}
         <div className="mt-12 md:mt-16 text-center">
-          {/* <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white drop-shadow-lg">
-    Industries We've Served
-  </h2> */}
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-4">
             {industries.map((industry, idx) => (
               <span
                 key={idx}
-                className="bg-gradient-to-r from-[#2ba7ff] via-[#ca45ff] to-[#fe881b] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium shadow"
+                className="bg-gradient-to-r from-[#00E5FF] via-[#2C6DF6] to-[#FF8A00] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium shadow"
               >
                 {industry}
               </span>
             ))}
           </div>
         </div>
+
         <OurClients />
       </div>
     </section>
