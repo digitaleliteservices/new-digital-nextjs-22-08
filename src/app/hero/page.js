@@ -1,8 +1,12 @@
 "use client";
 
+import Image from "next/image";
+import bannerImage from "../../../public/assets/bannerimage.png"
+
 const Hero = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
+    
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"

@@ -284,17 +284,27 @@ import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [width, setWidth] = useState(95); // initial width in %
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    let lastScrollY = 0;
+
     const handleScroll = () => {
-      const scrollY = window.scrollY;
-      // Shrink width smoothly: min 75%, max 95%
-      const newWidth = Math.max(75, 95 - scrollY * 0.05);
-      setWidth(newWidth);
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        // Scrolling down
+        setIsScrolled(true);
+      } else {
+        // Scrolling up
+        setIsScrolled(false);
+      }
+
+      lastScrollY = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
