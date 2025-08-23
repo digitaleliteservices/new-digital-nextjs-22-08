@@ -66,7 +66,7 @@ const Services = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
@@ -75,19 +75,17 @@ const Services = () => {
              to-[#0a0014]/90 p-6 shadow-lg hover:shadow-purple-500/40 
              transition relative overflow-hidden flex flex-col"
             >
-              {/* Title Badge */}
+          
               <span className="inline-block px-4 py-3 mb-6 rounded-full text-base font-bold bg-[#1f1f2e]/80 border-[0.5px] border-purple-500/50 text-purple-300">
                 {service.title}
               </span>
 
-              {/* Bottom content (description + points + button) */}
+              
               <div className="mt-auto transition-all duration-500 group-hover:-translate-y-3">
-                {/* Description */}
                 <h3 className="text-lg font-semibold mb-4 leading-snug">
                   {service.description}
                 </h3>
 
-                {/* Points */}
                 <ul className="space-y-3 mb-6">
                   {service.points.slice(0, 2).map((point, idx) => (
                     <li
@@ -100,7 +98,6 @@ const Services = () => {
                   ))}
                 </ul>
 
-                {/* Hover Button */}
                 <div className="flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <button
                     onClick={() => setActiveService(service)}
@@ -112,7 +109,58 @@ const Services = () => {
               </div>
             </div>
           ))}
+        </div> */}
+        {/* Cards */}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  {services.map((service, index) => (
+    <div
+      key={index}
+      className={`group w-10/12 sm:w-11/12 min-h-[340px] mx-auto 
+        rounded-3xl bg-gradient-to-b from-[#1a0b2e]/90 
+        to-[#0a0014]/90 p-6 shadow-lg hover:shadow-purple-500/40 
+        transition relative overflow-hidden flex flex-col
+        ${services.length === 3 && index === 2 
+          ? "md:col-span-2 md:mx-auto md:w-1/2 lg:col-span-1 lg:w-11/12" 
+          : ""}`}
+    >
+      {/* Title Badge */}
+      <span className="inline-block px-4 py-3 mb-6 rounded-full text-base font-bold bg-[#1f1f2e]/80 border-[0.5px] border-purple-500/50 text-purple-300">
+        {service.title}
+      </span>
+
+      {/* Bottom content */}
+      <div className="mt-auto transition-all duration-500 group-hover:-translate-y-3">
+        {/* Description */}
+        <h3 className="text-lg font-semibold mb-4 leading-snug">
+          {service.description}
+        </h3>
+
+        {/* Points */}
+        <ul className="space-y-3 mb-6">
+          {service.points.slice(0, 2).map((point, idx) => (
+            <li key={idx} className="flex items-center gap-2 text-gray-300">
+              <CheckCircle className="w-5 h-5 text-purple-400" />
+              <span>{point}</span>
+            </li>
+          ))}
+        </ul>
+
+        {/* Hover Button */}
+        <div className="flex justify-center  opacity-100 md:opacity-100 lg:opacity-0 min-[786px]:opacity-100 group-hover:opacity-100 transition-opacity duration-500">
+          <button
+            onClick={() => setActiveService(service)}
+            className="px-6 py-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium shadow-lg hover:opacity-90"
+          >
+            Get More
+          </button>
         </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+
+
       </div>
 
       {/* Right Side Modal */}
