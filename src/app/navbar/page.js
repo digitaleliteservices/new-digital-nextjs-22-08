@@ -215,7 +215,7 @@ const Navbar = () => {
         </div>
 
         {/* Right CTA */}
-        <div className="hidden min-[1286px]:flex items-center gap-x-3">
+        <div className="hidden min-[1025px]:flex items-center gap-x-3">
           <Link
             href="/contact"
             className="w-40 text-center py-2 md:py-3 rounded-xl text-[14px] md:text-[15px] font-semibold tracking-wide text-white bg-gradient-to-r from-blue-500 to-purple-500 hover:opacity-90 transition"
@@ -226,7 +226,7 @@ const Navbar = () => {
 
         {/* Mobile Hamburger */}
         <button
-          className="block min-[1286px]:hidden text-[#1b1b4b] focus:outline-none"
+          className="block min-[1025px]:hidden text-[#1b1b4b] focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -236,7 +236,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         // <div className="flex min-[1286px]:hidden bg-white px-6 py-6 flex-col space-y-6 rounded-b-2xl shadow-md">
-      <div className="absolute top-full left-0 w-full bg-white px-6 py-6 flex flex-col space-y-6 rounded-b-2xl shadow-md min-[1286px]:hidden">
+      <div className="absolute top-full left-0 w-full bg-white px-6 py-6 flex flex-col space-y-6 rounded-b-2xl shadow-md min-[1025px]:hidden">
         <Link
             href="/what-we-do"
             className="text-[#1b1b4b] font-medium hover:text-[#4f46e5]"
