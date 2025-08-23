@@ -187,7 +187,7 @@ const Navbar = () => {
         </div>
 
         {/* Center Links */}
-        <div className="hidden min-[1286px]:flex flex-1 justify-center space-x-12 text-[13px] text-[#1b1b4b] font-medium tracking-wide">
+        <div className="hidden min-[1025px]:flex flex-1 justify-center space-x-12 text-[13px] text-[#1b1b4b] font-medium tracking-wide">
           <Link
             href="/what-we-do"
             className="hover:text-[#4f46e5] transition-colors"
