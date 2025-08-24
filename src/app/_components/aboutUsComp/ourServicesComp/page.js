@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-// Add this below the `services` array
+// Approach items
 const approach = [
   {
     title: "Client Understanding",
@@ -33,7 +33,7 @@ const approach = [
   },
 ];
 
-// Simple thin-line network-ish icon for the approach tiles
+// Thin-line icon used in approach tiles
 const NodeIcon = () => (
   <svg
     viewBox="0 0 24 24"
@@ -151,45 +151,56 @@ const OurServicesComp = () => {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen overflow-hidden text-white bg-[#0b0b14]">
-      {/* === BRANDED BACKDROP GRADIENT === */}
+    <section className="relative w-full min-h-screen overflow-hidden text-white bg-[#0c101e]">
+      {/* === BRANDED BACKDROP GRADIENT — BRIGHTER === */}
       <div className="absolute inset-0 z-[1] pointer-events-none overflow-hidden">
+        {/* conic shimmer */}
         <div
-          className="absolute -inset-[30%] opacity-30 mix-blend-screen animate-spin-slow"
+          className="absolute -inset-[28%] opacity-60 mix-blend-screen animate-spin-slow"
           style={{
             background:
-              "conic-gradient(from 0deg, rgba(6,182,212,.22), rgba(59,130,246,.20), rgba(251,146,60,.20), rgba(6,182,212,.22))",
+              "conic-gradient(from 0deg, rgba(6,182,212,.40), rgba(59,130,246,.36), rgba(245,158,11,.34), rgba(6,182,212,.40))",
           }}
         />
+        {/* large soft fields */}
         <div
-          className="absolute inset-0 blur-xl opacity-90 animate-pan"
+          className="absolute inset-0 blur-xl opacity-95 animate-pan"
           style={{
             backgroundImage: `
-              radial-gradient(70vmax 70vmax at 20% 30%, rgba(6,182,212,0.55) 0%, rgba(6,182,212,0.22) 40%, rgba(6,182,212,0) 70%),
-              radial-gradient(60vmax 60vmax at 60% 25%, rgba(251,146,60,0.45) 0%, rgba(251,146,60,0.18) 40%, rgba(251,146,60,0) 70%),
-              radial-gradient(75vmax 75vmax at 85% 35%, rgba(59,130,246,0.55) 0%, rgba(59,130,246,0.18) 40%, rgba(59,130,246,0) 72%)
+              radial-gradient(75vmax 75vmax at 20% 28%, rgba(6,182,212,0.75) 0%, rgba(6,182,212,0.42) 38%, rgba(6,182,212,0.06) 74%),
+              radial-gradient(65vmax 65vmax at 64% 22%, rgba(245,158,11,0.70) 0%, rgba(245,158,11,0.36) 38%, rgba(245,158,11,0.06) 74%),
+              radial-gradient(80vmax 80vmax at 86% 34%, rgba(59,130,246,0.78) 0%, rgba(59,130,246,0.40) 38%, rgba(59,130,246,0.06) 74%)
             `,
           }}
         />
+        {/* floating blobs */}
         <div
-          className="absolute top-[10%] left-[5%] w-[70vw] sm:w-[50vw] h-[70vw] sm:h-[50vw] rounded-full blur-2xl opacity-80 animate-float1"
+          className="absolute top-[10%] left-[5%] w-[70vw] sm:w-[50vw] h-[70vw] sm:h-[50vw] rounded-full blur-2xl opacity-90 animate-float1"
           style={{
             background:
-              "radial-gradient(circle, rgba(6,182,212,0.65) 0%, rgba(6,182,212,0.25) 45%, rgba(6,182,212,0) 72%)",
+              "radial-gradient(circle, rgba(6,182,212,0.85) 0%, rgba(6,182,212,0.38) 46%, rgba(6,182,212,0) 76%)",
           }}
         />
         <div
-          className="absolute top-[18%] left-1/2 -translate-x-1/2 w-[65vw] h-[65vw] rounded-full blur-2xl opacity-80 animate-float2"
+          className="absolute top-[18%] left-1/2 -translate-x-1/2 w-[65vw] h-[65vw] rounded-full blur-2xl opacity-90 animate-float2"
           style={{
             background:
-              "radial-gradient(circle, rgba(251,146,60,0.7) 0%, rgba(251,146,60,0.26) 40%, rgba(251,146,60,0) 70%)",
+              "radial-gradient(circle, rgba(245,158,11,0.82) 0%, rgba(245,158,11,0.36) 44%, rgba(245,158,11,0) 74%)",
           }}
         />
         <div
-          className="absolute top-[10%] right-[5vw] w-[65vw] h-[65vw] rounded-full blur-2xl opacity-90 animate-float3"
+          className="absolute top-[10%] right-[5vw] w-[65vw] h-[65vw] rounded-full blur-2xl opacity-95 animate-float3"
           style={{
             background:
-              "radial-gradient(circle, rgba(59,130,246,0.7) 0%, rgba(59,130,246,0.23) 45%, rgba(59,130,246,0) 72%)",
+              "radial-gradient(circle, rgba(59,130,246,0.88) 0%, rgba(59,130,246,0.38) 46%, rgba(59,130,246,0) 76%)",
+          }}
+        />
+        {/* vertical brighten layer to avoid dark bottom */}
+        <div
+          className="absolute inset-0 mix-blend-screen"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(255,255,255,.12), rgba(255,255,255,.18) 35%, rgba(255,255,255,.22) 70%, rgba(255,255,255,.28))",
           }}
         />
       </div>
@@ -197,24 +208,24 @@ const OurServicesComp = () => {
       {/* === TOP CONTENT === */}
       <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-32 md:pt-40 lg:pt-44 pb-8 sm:pb-16 text-center">
         <p className="text-xs sm:text-sm md:text-base font-semibold tracking-wide">
-          <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-amber-300 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-amber-300 bg-clip-text text-transparent">
             Eliminate the Hassle
           </span>
         </p>
         <h1 className="mt-4 font-extrabold leading-tight tracking-tight text-2xl sm:text-4xl md:text-5xl lg:text-6xl">
           Empowering Digital Growth with{" "}
-          <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-amber-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-amber-300 bg-clip-text text-transparent">
             Elite Solutions
           </span>
           .
         </h1>
-        <p className="mt-6 sm:mt-8 text-sm sm:text-base md:text-lg text-slate-300 max-w-3xl mx-auto">
+        <p className="mt-6 sm:mt-8 text-sm sm:text-base md:text-lg text-slate-200 max-w-3xl mx-auto">
           Elevating businesses with tailored digital strategies that drive
           growth and innovation.
         </p>
       </div>
 
-      {/* === ARC IMAGE (unchanged) === */}
+      {/* === ARC IMAGE === */}
       <div className="absolute left-0 right-0 h-[28vh] sm:h-[40vh] md:h-[48vh] lg:h-[54vh] xl:h-[58vh] z-0 overflow-hidden select-none pointer-events-none">
         <img
           src="/assets/ourservices.png"
@@ -229,11 +240,8 @@ const OurServicesComp = () => {
         className="h-[18vh] sm:h-[26vh] md:h-[34vh] lg:h-[38vh] xl:h-[42vh]"
       />
 
-      {/* === TEXT BELOW ARC (unchanged) === */}
+      {/* === TEXT BELOW ARC === */}
       <div className="relative z-30 text-center px-4 max-w-6xl mx-auto">
-        {/* <button className="px-5 py-2 rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-white/10 transition text-sm sm:text-base font-medium text-white/90 shadow-lg inline-flex items-center justify-center">
-          <span className="mr-2">❤️</span> What To Expect
-        </button> */}
         <div className="flex justify-center">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-white/5 ring-1 ring-white/10">
             <span className="inline-block w-2 h-2 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-amber-400" />
@@ -242,17 +250,17 @@ const OurServicesComp = () => {
         </div>
         <h2 className="mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
           We nest in and around{" "}
-          <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-amber-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-amber-300 bg-clip-text text-transparent">
             your unique conditions.
           </span>
         </h2>
-        <p className="mt-4 text-sm sm:text-base md:text-lg text-slate-300 max-w-3xl mx-auto">
+        <p className="mt-4 text-sm sm:text-base md:text-lg text-slate-200 max-w-3xl mx-auto">
           Tailored, flexible workflows that adapt to your reality—never the
           other way around.
         </p>
       </div>
 
-      {/* === SERVICES GRID (logo-themed cards) === */}
+      {/* === SERVICES GRID === */}
       <section className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 sm:mt-14 md:mt-16 pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-7">
           {services.map((svc, idx) => {
@@ -268,15 +276,15 @@ const OurServicesComp = () => {
                 <img
                   src="/assets/ourservices_card_bg.avif"
                   alt=""
-                  className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-[1.04] transition-[opacity,transform] duration-500"
+                  className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.04] transition-[opacity,transform] duration-500"
                   loading="lazy"
                   draggable="false"
                 />
-                {/* Readability overlay */}
-                <div className="absolute inset-0 bg-[#0b0b14]/70 group-hover:bg-[#0b0b14]/50 transition-colors duration-500" />
+                {/* Readability overlay (LIGHTER) */}
+                <div className="absolute inset-0 bg-[#0b0b14]/40 group-hover:bg-[#0b0b14]/25 transition-colors duration-500" />
 
                 {/* Branded top bar */}
-                <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-cyan-400 via-blue-500 to-amber-400 opacity-80 group-hover:opacity-100" />
+                <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-cyan-400 via-blue-500 to-amber-400 opacity-90 group-hover:opacity-100" />
 
                 {/* Content */}
                 <div className="relative p-6 sm:p-7">
@@ -293,7 +301,7 @@ const OurServicesComp = () => {
                     {preview.map((pt, i) => (
                       <li
                         key={i}
-                        className="flex items-start gap-3 text-slate-200"
+                        className="flex items-start gap-3 text-slate-100"
                       >
                         <span className="mt-1 inline-flex items-center justify-center rounded-full w-5 h-5 text-white shadow-md shadow-cyan-900/30 bg-gradient-to-br from-cyan-500 via-blue-500 to-amber-400">
                           <CheckIcon />
@@ -318,20 +326,18 @@ const OurServicesComp = () => {
                 </div>
 
                 {/* Brand glow on hover */}
-                <div className="pointer-events-none absolute -inset-1 rounded-[28px] opacity-0 group-hover:opacity-100 transition duration-500 blur-2xl bg-[radial-gradient(60%_80%_at_50%_0%,rgba(6,182,212,.25),rgba(59,130,246,.18),rgba(251,146,60,.12),transparent)]" />
+                <div className="pointer-events-none absolute -inset-1 rounded-[28px] opacity-0 group-hover:opacity-100 transition duration-500 blur-2xl bg-[radial-gradient(60%_80%_at_50%_0%,rgba(6,182,212,.28),rgba(59,130,246,.22),rgba(245,158,11,.16),transparent)]" />
               </article>
             );
           })}
         </div>
       </section>
 
-      {/* === FALLING LINES VIDEO (brand-matched) — BELOW CARDS === */}
-      {/* === FALLING LINES VIDEO (brand-matched) — BELOW CARDS === */}
+      {/* === FALLING LINES VIDEO === */}
       <section className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         <div className="relative overflow-hidden rounded-3xl ring-1 ring-white/10 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.6)]">
-          {/* video */}
           <video
-            className="block w-full h-auto brightness-90 hover:brightness-110 transition duration-500"
+            className="block w-full h-auto brightness-100 hover:brightness-[1.12] transition duration-500"
             autoPlay
             playsInline
             muted
@@ -340,26 +346,24 @@ const OurServicesComp = () => {
             aria-label="Brand falling lines animation"
           >
             <source src="/assets/falling_our_services.webm" type="video/webm" />
-            {/* <source src="/assets/falling_our_services.mp4" type="video/mp4" /> */}
           </video>
 
-          {/* text overlay */}
           <div className="absolute inset-0 flex flex-col items-center justify-start text-center px-4 pt-16 sm:pt-20 md:pt-24 lg:pt-28">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
               One go-to partner{" "}
-              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-amber-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-amber-300 bg-clip-text text-transparent">
                 who orchestrates and delivers
               </span>
               .
             </h2>
-            <p className="mt-4 max-w-2xl text-sm sm:text-base md:text-lg text-white/70">
+            <p className="mt-4 max-w-2xl text-sm sm:text-base md:text-lg text-white/80">
               Get seamless service through years of expertise. Nothing gets lost
               — we anticipate and resolve before you even have to ask.
             </p>
           </div>
         </div>
 
-        {/* === LOGO BELOW VIDEO === */}
+        {/* Logo */}
         <div className="flex justify-center mt-10">
           <img
             src="/assets/DES_LOGO4.png"
@@ -370,28 +374,29 @@ const OurServicesComp = () => {
         </div>
       </section>
 
+      {/* === OUR APPROACH (brighter glows) === */}
       <section className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         {/* ambient logo-colored glows */}
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
           <div
-            className="absolute -top-24 -left-24 w-[36rem] h-[36rem] rounded-full blur-3xl opacity-25"
+            className="absolute -top-24 -left-24 w-[36rem] h-[36rem] rounded-full blur-3xl opacity-55"
             style={{
               background:
-                "radial-gradient(closest-side, rgba(6,182,212,.45), transparent 70%)",
+                "radial-gradient(closest-side, rgba(6,182,212,.70), transparent 70%)",
             }}
           />
           <div
-            className="absolute -top-16 right-[-10%] w-[30rem] h-[30rem] rounded-full blur-3xl opacity-20"
+            className="absolute -top-16 right-[-10%] w-[30rem] h-[30rem] rounded-full blur-3xl opacity-50"
             style={{
               background:
-                "radial-gradient(closest-side, rgba(59,130,246,.45), transparent 70%)",
+                "radial-gradient(closest-side, rgba(59,130,246,.66), transparent 70%)",
             }}
           />
           <div
-            className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[42rem] h-[42rem] rounded-full blur-3xl opacity-25"
+            className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[42rem] h-[42rem] rounded-full blur-3xl opacity-55"
             style={{
               background:
-                "radial-gradient(closest-side, rgba(245,158,11,.45), transparent 70%)",
+                "radial-gradient(closest-side, rgba(245,158,11,.70), transparent 70%)",
             }}
           />
         </div>
@@ -408,11 +413,11 @@ const OurServicesComp = () => {
         <div className="text-center mt-6">
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
             Always giving you{" "}
-            <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-amber-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-amber-300 bg-clip-text text-transparent">
               exactly what you need.
             </span>
           </h3>
-          <p className="mt-4 text-white/70 max-w-2xl mx-auto">
+          <p className="mt-4 text-white/80 max-w-2xl mx-auto">
             No more scattered details or convoluted tasks. We line everything up
             so nothing gets lost—anticipating and resolving before you have to
             ask.
@@ -436,12 +441,12 @@ const OurServicesComp = () => {
               </div>
 
               <h4 className="text-2xl sm:text-3xl font-bold">Our Approach</h4>
-              <p className="mt-2 text-white/70 max-w-2xl">
+              <p className="mt-2 text-white/80 max-w-2xl">
                 A pragmatic, transparent workflow that keeps momentum and
                 delivers results.
               </p>
 
-              {/* chips with logo-gradient borders */}
+              {/* chips */}
               <div className="mt-6 flex flex-wrap gap-3">
                 {[
                   "Client understanding",
@@ -487,18 +492,16 @@ const OurServicesComp = () => {
                 key={i}
                 className="group relative rounded-3xl bg-[#10101a]/80 p-6 overflow-hidden ring-1 ring-white/10"
               >
-                {/* logo-gradient underline */}
-                <div className="absolute inset-x-0 -bottom-0.5 h-0.5 bg-gradient-to-r from-cyan-400 via-blue-500 to-amber-400 opacity-80" />
+                <div className="absolute inset-x-0 -bottom-0.5 h-0.5 bg-gradient-to-r from-cyan-400 via-blue-500 to-amber-400 opacity-90" />
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 text-white/70 group-hover:text-white transition">
                     <NodeIcon />
                   </div>
                   <div>
                     <p className="font-semibold">{item.title}</p>
-                    <p className="text-sm text-white/70 mt-1">{item.desc}</p>
+                    <p className="text-sm text-white/80 mt-1">{item.desc}</p>
                   </div>
                 </div>
-                {/* hover glow */}
                 <div
                   className="pointer-events-none absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-500 blur-2xl"
                   style={{
@@ -518,17 +521,16 @@ const OurServicesComp = () => {
               key={i}
               className="group relative rounded-3xl bg-[#0e0e17]/80 p-6 overflow-hidden ring-1 ring-white/10 hover:ring-white/20 transition"
             >
-              <div className="absolute inset-x-0 -bottom-0.5 h-0.5 bg-gradient-to-r from-cyan-400 via-blue-500 to-amber-400 opacity-70 group-hover:opacity-100" />
+              <div className="absolute inset-x-0 -bottom-0.5 h-0.5 bg-gradient-to-r from-cyan-400 via-blue-500 to-amber-400 opacity-80 group-hover:opacity-100" />
               <div className="flex items-start gap-4">
-                <div className="shrink-0 text-white/60 group-hover:text-white transition">
+                <div className="shrink-0 text-white/70 group-hover:text-white transition">
                   <NodeIcon />
                 </div>
                 <div>
                   <p className="font-semibold">{item.title}</p>
-                  <p className="text-sm text-white/70 mt-1">{item.desc}</p>
+                  <p className="text-sm text-white/80 mt-1">{item.desc}</p>
                 </div>
               </div>
-              {/* soft corner glow on hover */}
               <div
                 className="pointer-events-none absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-500 blur-2xl"
                 style={{
@@ -541,7 +543,7 @@ const OurServicesComp = () => {
         </div>
       </section>
 
-      {/* === MODAL (unchanged) === */}
+      {/* === MODAL === */}
       {openIdx !== null && (
         <div
           className="fixed inset-0 z-[60] flex items-center justify-center p-4"
@@ -555,7 +557,7 @@ const OurServicesComp = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative px-6 py-5 border-b border-white/10">
-              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-amber-400 opacity-80" />
+              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-amber-400 opacity-90" />
               <div className="relative flex items-center justify-between">
                 <div>
                   <p className="text-xs uppercase tracking-wider text-white/70">
@@ -576,13 +578,13 @@ const OurServicesComp = () => {
             </div>
 
             <div className="px-6 py-6 max-h-[75vh] overflow-y-auto">
-              <p className="text-slate-300 text-sm sm:text-base">
+              <p className="text-slate-200 text-sm sm:text-base">
                 {services[openIdx].blurb}
               </p>
 
               <ul className="mt-5 space-y-3">
                 {services[openIdx].points.map((pt, i) => (
-                  <li key={i} className="flex items-start gap-3 text-slate-100">
+                  <li key={i} className="flex items-start gap-3 text-slate-50">
                     <span className="mt-1 inline-flex items-center justify-center rounded-md w-6 h-6 text-white shadow-lg shadow-cyan-900/30 ring-2 ring-white/10 bg-gradient-to-br from-cyan-500 via-blue-500 to-amber-400">
                       <CheckIcon />
                     </span>
@@ -606,7 +608,7 @@ const OurServicesComp = () => {
         </div>
       )}
 
-      {/* === KEYFRAMES (unchanged) === */}
+      {/* === KEYFRAMES === */}
       <style jsx global>{`
         @keyframes pan {
           0% {
