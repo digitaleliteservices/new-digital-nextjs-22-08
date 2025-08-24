@@ -72,7 +72,7 @@ const Navbar = () => {
   ${
     pathname === href
       ? `
-        text-orange-500 
+        text-blue-500 
         before:absolute before:-top-5 before:left-0 before:right-0 before:h-[3px] 
         before:bg-gradient-to-r before:from-purple-500 before:to-orange-500
         after:absolute after:-bottom-5 after:left-0 after:right-0 after:h-[3px]
