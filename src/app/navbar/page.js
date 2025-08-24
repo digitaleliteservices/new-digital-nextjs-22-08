@@ -52,6 +52,9 @@ const Navbar = () => {
 
           {/* Center Links */}
           <div className="hidden min-[1025px]:flex flex-1 justify-center space-x-12 text-[13px] text-[#1b1b4b] font-medium tracking-wide">
+            <Link href="/" className="hover:text-[#4f46e5] transition-colors">
+              Home
+            </Link>
             <Link
               href="/about-us"
               className="hover:text-[#4f46e5] transition-colors"
@@ -59,10 +62,10 @@ const Navbar = () => {
               About Us
             </Link>
             <Link
-              href="/our-approach"
+              href="/our-services"
               className="hover:text-[#4f46e5] transition-colors"
             >
-              Our Approach
+              Services
             </Link>
             <Link
               href="/insights"
