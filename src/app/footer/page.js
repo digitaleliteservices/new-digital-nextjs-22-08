@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import desLogo from "../../../public/assets/DES_LOGO4.png"
 
 const Footer = () => {
   return (
@@ -26,7 +27,7 @@ const Footer = () => {
           <Link href="/" className="flex items-center gap-3">
             <div className=" bg-gradient-to-r shadow-lg shadow-pink-500/30 animate-pulse" />
             <Image
-              src="/assets/DES_LOGO4.PNG"
+              src={desLogo}
               alt="Digital Elite Services Logo"
               width={40}
               height={40}
@@ -153,8 +154,6 @@ const Footer = () => {
     </span>
   </Link>
 </div>
-
-
 
         {/* Copyright */}
         <p className="text-gray-400 mt-2 text-center text-sm">
