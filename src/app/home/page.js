@@ -1,5 +1,6 @@
 "use client";
 
+import Spiral from "@/spiral/page";
 import Footer from "../footer/page";
 import Hero from "../hero/page";
 import Navbar from "../navbar/page";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Services />
       <WhoWeWorkWith />
+      <Spiral />
       <WhyChooseUs />
       <Footer />
     </div>
