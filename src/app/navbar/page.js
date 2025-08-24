@@ -112,16 +112,16 @@ const Navbar = () => {
         {isOpen && (
           <div className="absolute top-full left-0 w-full bg-white px-6 py-6 flex flex-col space-y-6 rounded-b-2xl shadow-md min-[1025px]:hidden">
             <Link
-              href="/what-we-do"
+              href="/about-us"
               className="text-[#1b1b4b] font-medium hover:text-[#4f46e5]"
             >
-              What We Do
+              About Us
             </Link>
             <Link
-              href="/our-approach"
+              href="/our-services"
               className="text-[#1b1b4b] font-medium hover:text-[#4f46e5]"
             >
-              Our Approach
+              Services
             </Link>
             <Link
               href="/insights"
