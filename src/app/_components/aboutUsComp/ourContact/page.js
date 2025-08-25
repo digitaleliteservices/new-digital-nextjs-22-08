@@ -72,9 +72,8 @@ const OurContact = () => {
 
   return (
     // <div className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden">
-    <div
-  className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden max-h-1024:overflow-y-auto max-h-1024:min-h-0 max-h-1024:h-[1024px]"
->
+    // <div className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden [@media(width:1025px)]:mt-8 [@media(width:1025px)]:mb-16">
+<div className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden [@media(max-width:1025px)]:mt-8 [@media(max-width:1025px)]:mb-16">
       {/* Purple glow at bottom */}
       <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-blue-400/50 to-transparent pointer-events-none" />
 

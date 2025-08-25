@@ -4,20 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // 👈 import this
 import { Menu, X } from "lucide-react";
-import desLogo from "../../../public/assets/DES_LOGO4.png"
+import desLogo from "../../../public/assets/DES_LOGO4.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const pathname = usePathname(); 
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
-  
+
   const navLinks = [
 { href: "/", label: "Home" },
 { href: "/about-us", label: "About Us" },
@@ -26,10 +25,6 @@ const Navbar = () => {
 ];
 
   return (
-    // <nav
-    //   className={`fixed top-2 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ease-in-out
-    //     ${isScrolled ? "w-10/12" : "w-11/12"}`}
-    //     >
     <nav
   className={`fixed top-2 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ease-in-out
     ${isScrolled ? "w-9/12" : "w-11/12"}`}
@@ -65,36 +60,17 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Center Links */}
-          {/* <div className="hidden min-[1025px]:flex flex-1 justify-center  space-x-12 text-[13px] text-[#1b1b4b] font-medium tracking-wide"> */}
+        
          <div
-  className={`hidden min-[1025px]:flex flex-1 justify-center transition-all duration-500
-    ${isScrolled ? "space-x-8 text-[12px]" : "space-x-12 text-[13px]"} text-[#1b1b4b] font-medium tracking-wide`}
->
-{/* <div
-  className={`hidden min-[1025px]:flex flex-1 justify-center items-center 
-    transition-all duration-500 ease-in-out text-[#1b1b4b] font-medium tracking-wide
-    ${isScrolled ? "gap-8 text-[12px]" : "gap-12 text-[13px]"}`}
-> */}
-  
+            className={`hidden min-[1025px]:flex flex-1 justify-center transition-all duration-500
+              ${isScrolled ? "space-x-8 text-[12px]" : "space-x-12 text-[13px]"} text-[#1b1b4b] font-medium tracking-wide`}
+          >
+            
           {navLinks.map(({ href, label }) => (
                 <Link
                   key={href}
                   href={href}
-        //  className={`
-        //             relative transition-colors
-        //             ${
-        //               pathname === href
-        //                 ? `
-        //                   text-blue-500 
-        //                   before:absolute before:-top-5 before:left-0 before:right-0 before:h-[3px] 
-        //                   before:bg-gradient-to-r before:from-purple-500 before:to-orange-500
-        //                   after:absolute after:-bottom-5 after:left-0 after:right-0 after:h-[3px]
-        //                   after:bg-gradient-to-r after:from-purple-500 after:to-orange-500
-        //                 `
-        //                 : "text-[#1b1b4b] hover:text-[#4f46e5]"
-        //             }
-        //           `}
+       
         
      className={`
         relative transition-colors duration-300 ease-in-out

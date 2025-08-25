@@ -114,7 +114,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="/terms-and-conditions"
+            href="/terms-conditions"
             className="group relative w-full md:w-auto"
           >
             <span className="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-amber-400 opacity-90 blur-[6px] transition duration-300 group-hover:blur-[10px]" />
