@@ -4,7 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  trailingSlash: true, // 👈 Important
+  // trailingSlash: true, 
+  // 👈 Important
 };
 
 export default nextConfig;
