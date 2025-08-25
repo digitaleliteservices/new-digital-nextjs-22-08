@@ -22,7 +22,7 @@ const Navbar = () => {
 { href: "/", label: "Home" },
 { href: "/about-us", label: "About Us" },
 { href: "/our-services", label: "Services" },
-{ href: "/insights", label: "Insights" },
+// { href: "/insights", label: "Insights" },
 ];
 
   return (
@@ -67,15 +67,15 @@ const Navbar = () => {
 
           {/* Center Links */}
           {/* <div className="hidden min-[1025px]:flex flex-1 justify-center  space-x-12 text-[13px] text-[#1b1b4b] font-medium tracking-wide"> */}
-         {/* <div
+         <div
   className={`hidden min-[1025px]:flex flex-1 justify-center transition-all duration-500
     ${isScrolled ? "space-x-8 text-[12px]" : "space-x-12 text-[13px]"} text-[#1b1b4b] font-medium tracking-wide`}
-> */}
-<div
+>
+{/* <div
   className={`hidden min-[1025px]:flex flex-1 justify-center items-center 
     transition-all duration-500 ease-in-out text-[#1b1b4b] font-medium tracking-wide
     ${isScrolled ? "gap-8 text-[12px]" : "gap-12 text-[13px]"}`}
->
+> */}
   
           {navLinks.map(({ href, label }) => (
                 <Link
@@ -95,33 +95,34 @@ const Navbar = () => {
         //                 : "text-[#1b1b4b] hover:text-[#4f46e5]"
         //             }
         //           `}
-       className={`
-  relative transition-colors duration-300 ease-in-out
-  ${
-    pathname === href
-      ? `
-        text-blue-500 
-        before:absolute before:-top-5 before:left-0 before:right-0 before:h-[3px] 
-        before:bg-gradient-to-r before:from-purple-500 before:to-orange-500
-        before:opacity-100 before:transition-opacity before:duration-300 before:ease-in-out
-        before:will-change-[opacity,transform]
+        
+     className={`
+        relative transition-colors duration-300 ease-in-out
+        ${
+          pathname === href
+            ? `
+              text-blue-500 
+              before:absolute before:-top-5 before:left-0 before:right-0 before:h-[3px] 
+              before:bg-gradient-to-r before:from-purple-500 before:to-orange-500
+              before:opacity-100 before:transition-opacity before:duration-300 before:ease-in-out
+              before:will-change-[opacity,transform]
 
-        after:absolute after:-bottom-5 after:left-0 after:right-0 after:h-[3px]
-        after:bg-gradient-to-r after:from-purple-500 after:to-orange-500
-        after:opacity-100 after:transition-opacity after:duration-300 after:ease-in-out
-        after:will-change-[opacity,transform]
-      `
-      : `
-        text-[#1b1b4b] hover:text-[#4f46e5]
-        before:opacity-0 hover:before:opacity-100
-        after:opacity-0 hover:after:opacity-100
-        before:transition-opacity before:duration-300 before:ease-in-out
-        after:transition-opacity after:duration-300 after:ease-in-out
-        before:will-change-[opacity,transform]
-        after:will-change-[opacity,transform]
-      `
-  }
-`}
+              after:absolute after:-bottom-5 after:left-0 after:right-0 after:h-[3px]
+              after:bg-gradient-to-r after:from-purple-500 after:to-orange-500
+              after:opacity-100 after:transition-opacity after:duration-300 after:ease-in-out
+              after:will-change-[opacity,transform]
+            `
+            : `
+              text-[#1b1b4b] hover:text-[#4f46e5]
+              before:opacity-0 hover:before:opacity-100
+              after:opacity-0 hover:after:opacity-100
+              before:transition-opacity before:duration-300 before:ease-in-out
+              after:transition-opacity after:duration-300 after:ease-in-out
+              before:will-change-[opacity,transform]
+              after:will-change-[opacity,transform]
+            `
+        }
+      `}
                 >
                   {label}
                 </Link>
@@ -164,12 +165,12 @@ const Navbar = () => {
             >
               Services
             </Link>
-            <Link
+            {/* <Link
               href="/insights"
               className="text-[#1b1b4b] font-medium hover:text-[#4f46e5]"
             >
               Insights
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
               className="block text-center py-3 rounded-xl text-[15px] font-semibold tracking-wide text-white

@@ -71,7 +71,10 @@ const OurContact = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden">
+    // <div className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden">
+    <div
+  className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden max-h-1024:overflow-y-auto max-h-1024:min-h-0 max-h-1024:h-[1024px]"
+>
       {/* Purple glow at bottom */}
       <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-blue-400/50 to-transparent pointer-events-none" />
 
@@ -100,12 +103,12 @@ const OurContact = () => {
             <form className="space-y-6" onSubmit={handleSubmit}>
               {/* Name */}
               <div>
-                <label
+                {/* <label
                   htmlFor="name"
                   className="block text-gray-400 mb-2"
                 >
                   Name
-                </label>
+                </label> */}
                 <input
                   id="name"
                   name="name"
@@ -121,12 +124,12 @@ const OurContact = () => {
 
               {/* Phone */}
               <div>
-                <label
+                {/* <label
                   htmlFor="phone"
                   className="block text-gray-400 mb-2"
                 >
                   Phone
-                </label>
+                </label> */}
                 <input
                   id="phone"
                   name="phone"
@@ -142,12 +145,12 @@ const OurContact = () => {
 
               {/* Email */}
               <div>
-                <label
+                {/* <label
                   htmlFor="email"
                   className="block text-gray-400 mb-2"
                 >
                   Email
-                </label>
+                </label> */}
                 <input
                   id="email"
                   name="email"
@@ -163,12 +166,12 @@ const OurContact = () => {
 
               {/* Company */}
               <div>
-                <label
+                {/* <label
                   htmlFor="company"
                   className="block text-gray-400 mb-2"
                 >
                   Company Name
-                </label>
+                </label> */}
                 <input
                   id="company"
                   name="company"
