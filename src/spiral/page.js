@@ -23,10 +23,10 @@ const Spiral = () => {
       {/* Top badge */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 sm:pt-16">
         <div className="flex justify-center">
-          <span className="inline-flex items-center gap-2 rounded-full bg-white text-slate-700/80 shadow-sm ring-1 ring-black/5 px-3 py-1.5 text-xs sm:text-sm">
+          {/* <span className="inline-flex items-center gap-2 rounded-full bg-white text-slate-700/80 shadow-sm ring-1 ring-black/5 px-3 py-1.5 text-xs sm:text-sm">
             <span className="inline-block w-4 h-4 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-amber-400" />
             Dependable Precision
-          </span>
+          </span> */}
         </div>
       </div>
 
