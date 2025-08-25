@@ -18,16 +18,17 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about-us", label: "About Us" },
-    { href: "/our-services", label: "Services" },
-    { href: "/insights", label: "Insights" },
-  ];
+{ href: "/", label: "Home" },
+{ href: "/about-us", label: "About Us" },
+{ href: "/our-services", label: "Services" },
+// { href: "/insights", label: "Insights" },
+];
+
   return (
     <nav
-      className={`fixed top-2 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ease-in-out
-    ${isScrolled ? "w-10/12" : "w-11/12"}`}
-    >
+  className={`fixed top-2 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ease-in-out
+    ${isScrolled ? "w-9/12" : "w-11/12"}`}
+>
       {/* Glow bands */}
       <div
         aria-hidden
@@ -59,30 +60,49 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Center Links */}
-          <div className="hidden min-[1025px]:flex flex-1 justify-center  space-x-12 text-[13px] text-[#1b1b4b] font-medium tracking-wide">
-            {navLinks.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className={`
-  relative transition-colors
-  ${
-    pathname === href
-      ? `
-        text-orange-500 
-        before:absolute before:-top-5 before:left-0 before:right-0 before:h-[3px] 
-        before:bg-gradient-to-r before:from-purple-500 before:to-orange-500
-        after:absolute after:-bottom-5 after:left-0 after:right-0 after:h-[3px]
-        after:bg-gradient-to-r after:from-purple-500 after:to-orange-500
-      `
-      : "text-[#1b1b4b] hover:text-[#4f46e5]"
-  }
-`}
-              >
-                {label}
-              </Link>
-            ))}
+        
+         <div
+            className={`hidden min-[1025px]:flex flex-1 justify-center transition-all duration-500
+              ${isScrolled ? "space-x-8 text-[12px]" : "space-x-12 text-[13px]"} text-[#1b1b4b] font-medium tracking-wide`}
+          >
+            
+          {navLinks.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+       
+        
+     className={`
+        relative transition-colors duration-300 ease-in-out
+        ${
+          pathname === href
+            ? `
+              text-blue-500 
+              before:absolute before:-top-5 before:left-0 before:right-0 before:h-[3px] 
+              before:bg-gradient-to-r before:from-purple-500 before:to-orange-500
+              before:opacity-100 before:transition-opacity before:duration-300 before:ease-in-out
+              before:will-change-[opacity,transform]
+
+              after:absolute after:-bottom-5 after:left-0 after:right-0 after:h-[3px]
+              after:bg-gradient-to-r after:from-purple-500 after:to-orange-500
+              after:opacity-100 after:transition-opacity after:duration-300 after:ease-in-out
+              after:will-change-[opacity,transform]
+            `
+            : `
+              text-[#1b1b4b] hover:text-[#4f46e5]
+              before:opacity-0 hover:before:opacity-100
+              after:opacity-0 hover:after:opacity-100
+              before:transition-opacity before:duration-300 before:ease-in-out
+              after:transition-opacity after:duration-300 after:ease-in-out
+              before:will-change-[opacity,transform]
+              after:will-change-[opacity,transform]
+            `
+        }
+      `}
+                >
+                  {label}
+                </Link>
+              ))}
           </div>
 
           {/* Right CTA */}
@@ -108,7 +128,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="absolute top-full left-0 w-full bg-white px-6 py-6 flex flex-col space-y-6 rounded-b-2xl shadow-md min-[1025px]:hidden">
+          <div className="absolute top-full left-0 w-full bg-white px-9 py-6 flex flex-col space-y-6 rounded-b-2xl shadow-md min-[1025px]:hidden">
             <Link
               href="/about-us"
               className="text-[#1b1b4b] font-medium hover:text-[#4f46e5]"
@@ -121,12 +141,12 @@ const Navbar = () => {
             >
               Services
             </Link>
-            <Link
+            {/* <Link
               href="/insights"
               className="text-[#1b1b4b] font-medium hover:text-[#4f46e5]"
             >
               Insights
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
               className="block text-center py-3 rounded-xl text-[15px] font-semibold tracking-wide text-white
