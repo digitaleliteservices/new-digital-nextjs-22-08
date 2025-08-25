@@ -4,32 +4,30 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // 👈 import this
 import { Menu, X } from "lucide-react";
-import desLogo from "../../../public/assets/DES_LOGO4.png"
+import desLogo from "../../../public/assets/DES_LOGO4.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const pathname = usePathname(); 
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-    
   }, []);
-  
-  
+
   const navLinks = [
-{ href: "/", label: "Home" },
-{ href: "/about-us", label: "About Us" },
-{ href: "/our-services", label: "Services" },
-{ href: "/insights", label: "Insights" },
-];
+    { href: "/", label: "Home" },
+    { href: "/about-us", label: "About Us" },
+    { href: "/our-services", label: "Services" },
+    { href: "/insights", label: "Insights" },
+  ];
   return (
     <nav
-  className={`fixed top-2 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ease-in-out
+      className={`fixed top-2 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ease-in-out
     ${isScrolled ? "w-10/12" : "w-11/12"}`}
->
+    >
       {/* Glow bands */}
       <div
         aria-hidden
@@ -63,11 +61,11 @@ const Navbar = () => {
 
           {/* Center Links */}
           <div className="hidden min-[1025px]:flex flex-1 justify-center  space-x-12 text-[13px] text-[#1b1b4b] font-medium tracking-wide">
-          {navLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-         className={`
+            {navLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className={`
   relative transition-colors
   ${
     pathname === href
@@ -81,10 +79,10 @@ const Navbar = () => {
       : "text-[#1b1b4b] hover:text-[#4f46e5]"
   }
 `}
-                >
-                  {label}
-                </Link>
-              ))}
+              >
+                {label}
+              </Link>
+            ))}
           </div>
 
           {/* Right CTA */}
