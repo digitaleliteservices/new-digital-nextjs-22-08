@@ -7,12 +7,10 @@ import Navbar from "../navbar/page";
 import Services from "../services/page";
 import WhoWeWorkWith from "../whowework/page";
 import WhyChooseUs from "../whychooseus/page";
-import PageTransitionWrapper from "../_components/pageTransitionWrapper/pageTransitionWrapper.jsx";
 
 export default function Home() {
   return (
     <div>
-      <PageTransitionWrapper />
       <Navbar />
       <Hero />
       <Services />
@@ -20,7 +18,6 @@ export default function Home() {
       <Spiral />
       <WhyChooseUs />
       <Footer />
-      <PageTransitionWrapper />
     </div>
   );
 }
