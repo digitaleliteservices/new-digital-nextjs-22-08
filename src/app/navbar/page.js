@@ -8,14 +8,9 @@ import desLogo from "../../../public/assets/DES_LOGO4.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  
 
   const navLinks = [
 { href: "/", label: "Home" },
@@ -25,9 +20,9 @@ const Navbar = () => {
 ];  
 
   return (
-    <nav
-  className={`fixed top-2 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ease-in-out
-    ${isScrolled ? "w-9/12" : "w-11/12"}`}
+
+<nav
+  className="fixed top-2 left-1/2 -translate-x-1/2 z-50 w-11/12 transition-all duration-500 ease-in-out"
 >
       {/* Glow bands */}
       <div
@@ -59,12 +54,12 @@ const Navbar = () => {
               </span>
             </Link>
           </div>
-
         
-         <div
-            className={`hidden min-[1025px]:flex flex-1 justify-center transition-all duration-500
-              ${isScrolled ? "space-x-8 text-[12px]" : "space-x-12 text-[13px]"} text-[#1b1b4b] font-medium tracking-wide`}
-          >
+    
+
+          <div
+  className="hidden min-[1025px]:flex flex-1 justify-center transition-all duration-500 space-x-12 text-[13px] text-[#1b1b4b] font-medium tracking-wide"
+>
             
           {navLinks.map(({ href, label }) => (
                 <Link
