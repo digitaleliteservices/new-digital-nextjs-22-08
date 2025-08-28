@@ -62,14 +62,17 @@ const WhyChooseUs = () => {
 
           {/* Right Column: Radar Video */}
           <div className="lg:flex-1 mt-10 lg:mt-0 flex justify-center">
-            <video
-              src="/assets/radar 2.webm"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-purple-500/20 shadow-[0_0_40px_rgba(139,92,246,0.4)]"
-            />
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-purple-500/20 shadow-[0_0_40px_rgba(139,92,246,0.4)] overflow-hidden">
+              <video
+                // src="/assets/hero-video30.mp4"
+                src="/assets/hero-video18.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

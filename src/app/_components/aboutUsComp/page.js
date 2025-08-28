@@ -12,7 +12,8 @@ const poppins = Poppins({
 });
 
 // Flower asset
-const FLOWER_SRC = "/assets/aboutflowerimg.avif";
+// const FLOWER_SRC = "/assets/aboutflowerimg.avif";
+const FLOWER_SRC = "/assets/aboutrocket.png";
 
 /** Staggered bullet list that animates on scroll */
 const AnimatedBullets = ({ items }) => {
@@ -161,7 +162,7 @@ const AboutUsComp = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            Our Business is Clarity, Consistency & Unity
+            Driving Innovation with Purpose, Precision & Impact
           </motion.h3>
 
           <motion.h1
@@ -170,8 +171,8 @@ const AboutUsComp = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.3 }}
           >
-            We are value creators <br className="hidden sm:block" /> with
-            hyperfocus.
+            We build meaningful experiences <br className="hidden sm:block" />{" "}
+            with relentless focus.
           </motion.h1>
         </div>
       </section>
@@ -227,17 +228,20 @@ const AboutUsComp = () => {
             {
               title: "Digital Marketing Excellence",
               desc: "We craft strategies that amplify visibility, engage audiences, and drive measurable growth for businesses of every size.",
-              img: "/assets/aboutcard1.avif",
+              // img: "/assets/aboutcard1.avif",
+              img: "/assets/aboutcard4.jpg",
             },
             {
               title: "Creative Design & Branding",
               desc: "From graphics to complete brand identities, we design with impact — ensuring your message is memorable and consistent.",
-              img: "/assets/aboutcard2.avif",
+              // img: "/assets/aboutcard2.avif",
+              img: "/assets/aboutcard5.jpg",
             },
             {
               title: "Custom Web Development",
               desc: "Whether launching, scaling, or optimizing, we build tailored web solutions that transform ideas into powerful digital experiences.",
-              img: "/assets/aboutcard3.avif",
+              // img: "/assets/aboutcard3.avif",
+              img: "/assets/aboutcard6.jpg",
             },
           ].map((card, i) => (
             <motion.div
@@ -270,7 +274,7 @@ const AboutUsComp = () => {
           <img
             src={FLOWER_SRC}
             alt="Decorative flower"
-            className="w-14 sm:w-16 md:w-20 h-auto"
+            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto"
           />
         </div>
 

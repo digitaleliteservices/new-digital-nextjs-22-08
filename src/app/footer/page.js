@@ -10,7 +10,8 @@ const Footer = () => {
       {/* Background video */}
       <div className="absolute inset-0 -z-20">
         <video
-          src="/assets/footer_video.webm"
+          // src="/assets/footer_video.webm"
+          src="/assets/hero-video19.mp4"
           autoPlay
           loop
           muted

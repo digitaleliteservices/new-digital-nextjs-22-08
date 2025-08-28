@@ -8,8 +8,12 @@ const Hero = () => {
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Video */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/assets/hero-video.mp4"
+        className="absolute top-0  left-0 w-full h-full object-cover"
+        // src="/assets/hero-video19.mp4" //6mb-->waves-->Select
+        // src="/assets/hero-video20.mp4" //5mb-->waves-->Select
+        // src="/assets/hero-video21.mp4" //13mb-->waves-->superb
+        // src="/assets/hero-video22.mp4" //136mb-->waves-->superb
+        src="/assets/hero-video25.mp4" //3mb-->superb
         autoPlay
         loop
         muted
@@ -17,7 +21,7 @@ const Hero = () => {
       ></video>
 
       {/* Overlay */}
-      {/* <div className="absolute inset-0 bg-black/40"></div> */}
+      <div className="absolute inset-0 bg-black/30"></div>
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 md:px-10">

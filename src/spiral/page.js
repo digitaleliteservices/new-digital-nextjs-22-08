@@ -33,11 +33,11 @@ const Spiral = () => {
       {/* Headline */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
-          One practical, holistic Service.
+          One practical, holistic Service
         </h1>
         <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
           <span className="bg-gradient-to-r from-sky-500 via-indigo-400 to-amber-500 bg-clip-text text-transparent">
-            Exponential daily value.
+            Exponential daily value
           </span>
         </h2>
         <p className="mt-4 text-slate-600">
@@ -129,14 +129,14 @@ const Spiral = () => {
       </div>
 
       {/* Flowing rainbow wave */}
-      <div className="relative">
+      {/* <div className="relative">
         <img
           src="/assets/home_page_spiral.png"
           alt=""
           className="mx-auto w-full max-w-[1400px] select-none pointer-events-none"
           draggable="false"
         />
-      </div>
+      </div> */}
 
       {/* small spacer below */}
       <div className="pb-12" />

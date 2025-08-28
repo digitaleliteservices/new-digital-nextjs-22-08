@@ -4,8 +4,8 @@ const clients = [
   { name: "DHS", src: "/assets/DHS.png" },
   { name: "Gnanasamrudhi", src: "/assets/gnanasamrudhi.png" },
   { name: "Plumeria", src: "/assets/Plumeria.png" },
-  { name: "SriMatru", src: "/assets/SriMathru.jpg" },
-  { name: "RRPL", src: "/assets/RRPL.jpg" },
+  { name: "SriMatru", src: "/assets/SriMathru2.jpg" },
+  { name: "RRPL", src: "/assets/clientlogo.png" },
 ];
 
 const OurClients = () => {

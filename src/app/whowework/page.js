@@ -114,15 +114,30 @@ const WhoWeWorkWith = () => {
           </div>
 
           {/* Center Column - Mandala Video with gradient ring */}
-          <div className="flex justify-center my-6 lg:my-0 lg:flex-1">
-            <div className="p-[3px] rounded-full bg-gradient-to-br from-[#00E5FF] via-[#2C6DF6] to-[#FF8A00] shadow-lg">
+          {/* <div className="flex justify-center my-6 lg:my-0 lg:flex-1">
+            <div className="rounded-full bg-gradient-to-br from-[#00E5FF] via-[#2C6DF6] to-[#FF8A00] shadow-lg">
               <video
-                src="/assets/!!MANDALA_20.webm"
+                src="/assets/hero-video9.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
                 className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full bg-white/10"
+              />
+            </div>
+          </div> */}
+          <div className="flex justify-center my-6 lg:my-0 lg:flex-1">
+            <div className="rounded-full bg-gradient-to-br from-[#00E5FF] via-[#2C6DF6] to-[#FF8A00] shadow-lg p-1">
+              <video
+                // src="/assets/hero-video9.mp4"
+                // src="/assets/hero-video16.mp4"
+                // src="/assets/hero-video18.mp4"
+                src="/assets/hero-video30.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-cover"
               />
             </div>
           </div>

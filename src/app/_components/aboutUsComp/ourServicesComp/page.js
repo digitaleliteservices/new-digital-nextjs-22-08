@@ -249,11 +249,12 @@ const OurServicesComp = () => {
           </span>
         </div>
         <h2 className="mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
-          We nest in and around{" "}
+          We adapt and grow{" "}
           <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-amber-300 bg-clip-text text-transparent">
-            your unique conditions.
+            within your unique environment.
           </span>
         </h2>
+
         <p className="mt-4 text-sm sm:text-base md:text-lg text-slate-200 max-w-3xl mx-auto">
           Tailored, flexible workflows that adapt to your reality—never the
           other way around.
@@ -345,20 +346,22 @@ const OurServicesComp = () => {
             preload="metadata"
             aria-label="Brand falling lines animation"
           >
-            <source src="/assets/falling_our_services.webm" type="video/webm" />
+            <source src="/assets/our_services_new2.mp4" type="video/mp4" />
           </video>
 
-          <div className="absolute inset-0 flex flex-col items-center justify-start text-center px-4 pt-16 sm:pt-20 md:pt-24 lg:pt-28">
+          {/* Content centered */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 sm:px-10 py-6 sm:py-10">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-              One go-to partner{" "}
+              Your trusted partner{" "}
               <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-amber-300 bg-clip-text text-transparent">
-                who orchestrates and delivers
+                driving ideas into reality
               </span>
               .
             </h2>
+
             <p className="mt-4 max-w-2xl text-sm sm:text-base md:text-lg text-white/80">
-              Get seamless service through years of expertise. Nothing gets lost
-              — we anticipate and resolve before you even have to ask.
+              We blend expertise and innovation to deliver seamless solutions —
+              anticipating challenges and solving them before they arise.
             </p>
           </div>
         </div>
