@@ -175,10 +175,146 @@ const PrivacyPolicyComp = () => {
           from our systems.
         </p>
 
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          9. Data Retention
+        </h2>
+        <p className="mb-6">
+          We will retain your personal information only for as long as necessary
+          to fulfill the purposes outlined in this Privacy Policy, comply with
+          legal obligations, resolve disputes, and enforce our agreements.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          10. Data Security
+        </h2>
+        <p className="mb-6">
+          We implement appropriate technical and organizational measures (such
+          as encryption, firewalls, and secure servers) to protect your personal
+          data from unauthorized access, alteration, disclosure, or destruction.
+          However, no method of transmission over the internet is 100% secure,
+          and we cannot guarantee absolute security.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          11. Sharing of Information
+        </h2>
+        <p className="mb-6">
+          We do not sell, trade, or rent your personal data to third parties.
+          However, we may share information with:
+        </p>
+        <p>
+          <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mr-1">
+            Service providers
+          </span>
+          (e.g., hosting providers, analytics tools) strictly to support our
+          operations.
+        </p>
+        <p>
+          <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mr-1">
+            Legal authorities,
+          </span>
+          if required to comply with applicable laws, regulations, or legal
+          processes.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          12. International Data Transfers
+        </h2>
+        <p className="mb-6">
+          If you access our services from outside India, your information may be
+          transferred to, stored, and processed in countries other than your
+          own. By using our services, you consent to such transfers in
+          accordance with this Privacy Policy.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          13. Changes to this Privacy Policy
+        </h2>
+        <p className="mb-6">
+          We may update or modify this Privacy Policy from time to time to
+          reflect changes in our practices, technology, or legal requirements.
+          Any updates will be posted on this page with an updated Effective
+          Date. We encourage you to review this policy periodically.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          14. Consent
+        </h2>
+        <p className="mb-6">
+          By using our website, you hereby consent to our Privacy Policy and
+          agree to its terms.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          15. Payment Information (if applicable)
+        </h2>
+        <p className="mb-6">
+          If we provide paid services and you make payments through our website,
+          your payment details (such as credit/debit card numbers or bank
+          account information) are processed securely by third-party payment
+          gateways. We do not store or directly handle sensitive financial
+          information.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          16. Third-Party Analytics
+        </h2>
+        <p className="mb-6">
+          We may use analytics tools (e.g., Google Analytics) to understand how
+          visitors use our website. These tools may collect data such as IP
+          address, device type, browser information, and on-site behavior. This
+          information is used only for statistical and performance improvement
+          purposes.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          17. Email & Communication Preferences
+        </h2>
+        <p className="mb-6">
+          You may opt out of receiving promotional emails or marketing
+          communications from us by following the unsubscribe instructions
+          included in our emails or by contacting us directly. However, we may
+          still send you non-promotional messages related to your account or
+          services.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          18. Links to Other Websites
+        </h2>
+        <p className="mb-6">
+          Our website may contain links to external websites. We are not
+          responsible for the privacy practices or content of such third-party
+          sites. We encourage users to review the privacy policies of those
+          websites before sharing any personal information.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          19. Do Not Track (DNT)
+        </h2>
+        <p className="mb-6">
+          Some browsers offer a "Do Not Track" feature. Our website currently
+          does not respond to DNT signals, but we respect your privacy and
+          continuously evaluate industry standards regarding such requests.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          20. Governing Law & Jurisdiction
+        </h2>
+        <p className="mb-6">
+          This Privacy Policy shall be governed by and construed in accordance
+          with the laws of India. Any disputes arising out of or in connection
+          with this Privacy Policy shall be subject to the exclusive
+          jurisdiction of the courts in Bangalore, Karnataka, India.
+        </p>
+
         {/* Contact */}
         <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
           Contact Us
         </h2>
+        <p className="mb-6">
+          If you have any questions or concerns regarding this Privacy Policy or
+          the handling of your personal information, please reach out to:
+        </p>
         <p className="mb-2">
           📧 Email:{" "}
           <a

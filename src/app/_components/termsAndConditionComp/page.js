@@ -212,13 +212,111 @@ const TermsAndConditionComponent = () => {
         <p className="mb-6">
           These Terms and Conditions are governed by and interpreted in
           accordance with the laws of India, and you submit to the exclusive
-          jurisdiction of the courts in Bengaluru.
+          jurisdiction of the courts in Bengaluru, Karnataka.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          13. Privacy Policy
+        </h2>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>
+            Your use of our website and services is also governed by our Privacy
+            Policy, which outlines how we collect, use, and protect your
+            personal data.
+          </li>
+          <li>
+            By using our website or services, you consent to such processing and
+            warrant that all data provided by you is accurate.
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          14. Refund & Cancellation Policy
+        </h2>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>
+            All payments made for services are non-refundable unless otherwise
+            stated in the service agreement.
+          </li>
+          <li>
+            Cancellations must be made in writing and are subject to approval
+            based on the stage of work completed.
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          15. Force Majeure
+        </h2>
+        <p className="mb-6">
+          We shall not be held liable for delays or failure to perform
+          obligations due to circumstances beyond our reasonable control (e.g.,
+          natural disasters, strikes, internet outages, government restrictions,
+          pandemics).
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          16. Communication & Notices
+        </h2>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li>
+            By engaging our services, you agree to receive communications
+            (emails, phone calls, SMS, or WhatsApp messages) related to your
+            account, service updates, or marketing unless you opt out.
+          </li>
+          <li>
+            Official notices will be sent to the contact information provided by
+            you.
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          17. Non-Solicitation Clause
+        </h2>
+        <p className="mb-6">
+          You agree not to directly solicit, hire, or engage any employee,
+          consultant, or contractor of Digital Elite Services during the term of
+          the contract and for 12 months after termination of services.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          18. Dispute Resolution
+        </h2>
+        <p className="mb-6">
+          In case of disputes, both parties agree to attempt amicable resolution
+          through negotiation or mediation before pursuing legal remedies.
+        </p>
+        <p className="mb-6">
+          If unresolved, disputes will be subject to arbitration under
+          [Arbitration and Conciliation Act, 1996 – if India is the
+          jurisdiction].
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          19. Severability
+        </h2>
+        <p className="mb-6">
+          If any provision of these Terms is found to be invalid or
+          unenforceable, the remaining provisions will remain in effect.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
+          20. Entire Agreement
+        </h2>
+        <p className="mb-6">
+          These Terms, along with any proposal or contract, constitute the
+          entire agreement between you and Digital Elite Services and supersede
+          any prior agreements or understandings.
         </p>
 
         {/* Contact */}
         <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-500 mt-8 mb-3">
           Contact Us
         </h2>
+        <p className="mb-6">
+          If you have any questions or concerns regarding this Terms and
+          Conditions or the handling of your personal information, please reach
+          out to:
+        </p>
         <p className="mb-2">
           📧 Email:{" "}
           <a
