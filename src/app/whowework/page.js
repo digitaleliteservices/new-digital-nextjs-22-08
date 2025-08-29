@@ -74,7 +74,7 @@ const WhoWeWorkWith = () => {
           {/* <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] via-[#2C6DF6] to-[#FF8A00]">
             Who We Work With
           </h2> */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
             Who We Work With
           </h2>
         </div>
