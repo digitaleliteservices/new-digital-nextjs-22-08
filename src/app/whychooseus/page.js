@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { Box, Code, Users, Activity } from "lucide-react"; // Importing icons
+import { useState,useEffect } from "react";
+import { FaArrowUp } from "react-icons/fa6";
+
 
 const features = [
   {
@@ -31,7 +33,10 @@ const features = [
 ];
 
 const WhyChooseUs = () => {
+  
   return (
+    <>
+
     <section className="relative py-16 md:py-20 bg-white">
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="rounded-3xl bg-gradient-to-br from-[#120024] via-[#0A0014] to-[#1a0b2e] shadow-xl overflow-hidden p-8 md:p-12 lg:flex lg:items-center lg:gap-12">
@@ -45,8 +50,8 @@ const WhyChooseUs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {features.map((feature, idx) => (
                 <div
-                  key={idx}
-                  className="flex items-start gap-4 p-4 bg-white/10 rounded-xl backdrop-blur-md hover:bg-white/20 transition"
+                key={idx}
+                className="flex items-start gap-4 p-4 bg-white/10 rounded-xl backdrop-blur-md hover:bg-white/20 transition"
                 >
                   <div className="flex-shrink-0">{feature.icon}</div>
                   <div>
@@ -71,12 +76,13 @@ const WhyChooseUs = () => {
                 muted
                 playsInline
                 className="w-full h-full object-cover"
-              />
+                />
             </div>
           </div>
         </div>
       </div>
     </section>
+                </>
   );
 };
 
