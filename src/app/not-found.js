@@ -2,10 +2,7 @@
 import React from "react";
 import Link from 'next/link';
 
-// import { Link } from "react-router-dom";
 const NotFound = () => {
-  // const props = path;
-  // const error = useRouteError();
   return (
     <div className="w-full bg-black h-screen flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 space-x-8 2xl:space-x-0">
       <div className="w-full lg:w-1/2 flex flex-col items-center justify-center lg:px-2 xl:px-0 text-center">
@@ -22,13 +19,6 @@ const NotFound = () => {
           {/* {error.statusText || error.message} */}
         </p>
         <Link href="/">Go Home</Link>
-        
-        {/* 
-        <Link
-          to={path}
-          className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-gray-100 px-4 py-2 rounded transition duration-150">
-          Return Home
-        </Link> */}
 
         <a className="bg-amber-50 text-black p-4 hover:bg-blue-400 hover:text-white font-bold border-2 rounded-3xl" href="/">Go To Home</a>
       </div>
