@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
 import Link from 'next/link';
-
 const NotFound = () => {
   return (
     <div className="w-full bg-black h-screen flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 space-x-8 2xl:space-x-0">
