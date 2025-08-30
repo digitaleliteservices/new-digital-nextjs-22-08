@@ -17,9 +17,8 @@ const NotFound = () => {
         <p className="text-3xl text-white">
           {/* {error.statusText || error.message} */}
         </p>
-        <Link href="/">Go Home</Link>
 
-        <a className="bg-amber-50 text-black p-4 hover:bg-blue-400 hover:text-white font-bold border-2 rounded-3xl" href="/">Go To Home</a>
+        <Link className="bg-amber-50 text-black p-4 hover:bg-blue-400 hover:text-white font-bold border-2 rounded-3xl" href="/">Go Home</Link>
       </div>
       <div className="w-1/2 lg:h-full flex lg:items-end justify-center p-4">
         <svg
