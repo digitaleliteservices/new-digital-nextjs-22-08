@@ -20,9 +20,6 @@ const PrivacyPolicyComp = () => {
           Privacy Policy
         </h1>
         <p className="mt-2 text-lg text-gray-400">Digital Elite Services</p>
-        {/* <p className="text-sm text-gray-500">
-          Effective Date: August 25th, 2025
-        </p> */}
       </div>
 
       {/* Content Card */}

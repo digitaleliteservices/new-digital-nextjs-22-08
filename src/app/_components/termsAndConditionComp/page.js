@@ -20,7 +20,6 @@ const TermsAndConditionComponent = () => {
           Terms &amp; Conditions
         </h1>
         <p className="mt-2 text-lg text-gray-400">Digital Elite Services</p>
-        {/* <p className="text-sm text-gray-500">Effective Date:</p> */}
       </div>
 
       {/* Content Card */}

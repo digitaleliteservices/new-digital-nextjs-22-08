@@ -71,9 +71,7 @@ const OurContact = () => {
   };
 
   return (
-    // <div className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden">
-    // <div className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden [@media(width:1025px)]:mt-8 [@media(width:1025px)]:mb-16">
-<div className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden pt-32 mt-5 pb-20 ">
+    <div className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden pt-32 mt-5 pb-20 ">
       {/* Purple glow at bottom */}
       <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-blue-400/50 to-transparent pointer-events-none" />
 
@@ -89,11 +87,6 @@ const OurContact = () => {
             <br />
             We take it from there.
           </h1>
-          {/* Optional subtitle here if you want */}
-          {/* <p className="text-lg text-gray-300 max-w-lg">
-            Data centers are our specialty. If you are in another industry or have
-            an opportunity where you feel we can help, we're open to new ideas.
-          </p> */}
         </div>
 
         {/* Right Side Form Card */}
@@ -102,12 +95,6 @@ const OurContact = () => {
             <form className="space-y-6" onSubmit={handleSubmit}>
               {/* Name */}
               <div>
-                {/* <label
-                  htmlFor="name"
-                  className="block text-gray-400 mb-2"
-                >
-                  Name
-                </label> */}
                 <input
                   id="name"
                   name="name"
@@ -123,12 +110,6 @@ const OurContact = () => {
 
               {/* Phone */}
               <div>
-                {/* <label
-                  htmlFor="phone"
-                  className="block text-gray-400 mb-2"
-                >
-                  Phone
-                </label> */}
                 <input
                   id="phone"
                   name="phone"
@@ -144,12 +125,6 @@ const OurContact = () => {
 
               {/* Email */}
               <div>
-                {/* <label
-                  htmlFor="email"
-                  className="block text-gray-400 mb-2"
-                >
-                  Email
-                </label> */}
                 <input
                   id="email"
                   name="email"
@@ -165,12 +140,6 @@ const OurContact = () => {
 
               {/* Company */}
               <div>
-                {/* <label
-                  htmlFor="company"
-                  className="block text-gray-400 mb-2"
-                >
-                  Company Name
-                </label> */}
                 <input
                   id="company"
                   name="company"
@@ -185,12 +154,6 @@ const OurContact = () => {
 
               {/* Website */}
               <div>
-                {/* <label
-                  htmlFor="website"
-                  className="block text-gray-400 mb-2"
-                >
-                  Company Website URL
-                </label> */}
                 <input
                   id="website"
                   name="website"
@@ -205,12 +168,6 @@ const OurContact = () => {
 
               {/* Service Select */}
               <div>
-                {/* <label
-                  htmlFor="service"
-                  className="block text-gray-400 mb-2"
-                >
-                  Choose Preferred Service
-                </label> */}
                 <select
                   id="service"
                   name="service"
@@ -227,9 +184,6 @@ const OurContact = () => {
                   <option value="Other">Other</option>
                 </select>
               </div>
-
-             
-             
 
               {/* Submit Button */}
               <button

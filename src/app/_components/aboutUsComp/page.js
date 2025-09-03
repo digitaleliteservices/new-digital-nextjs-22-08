@@ -228,19 +228,16 @@ const AboutUsComp = () => {
             {
               title: "Digital Marketing Excellence",
               desc: "We craft strategies that amplify visibility, engage audiences, and drive measurable growth for businesses of every size.",
-              // img: "/assets/aboutcard1.avif",
               img: "/assets/aboutcard4.jpg",
             },
             {
               title: "Creative Design & Branding",
               desc: "From graphics to complete brand identities, we design with impact — ensuring your message is memorable and consistent.",
-              // img: "/assets/aboutcard2.avif",
               img: "/assets/aboutcard5.jpg",
             },
             {
               title: "Custom Web Development",
               desc: "Whether launching, scaling, or optimizing, we build tailored web solutions that transform ideas into powerful digital experiences.",
-              // img: "/assets/aboutcard3.avif",
               img: "/assets/aboutcard6.jpg",
             },
           ].map((card, i) => (

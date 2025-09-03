@@ -10,20 +10,14 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
-  
-
   const navLinks = [
-{ href: "/", label: "Home" },
-{ href: "/about-us", label: "About Us" },
-{ href: "/our-services", label: "Services" },
-// { href: "/insights", label: "Insights" },
-];  
+    { href: "/", label: "Home" },
+    { href: "/about-us", label: "About Us" },
+    { href: "/our-services", label: "Services" },
+  ];
 
   return (
-
-<nav
-  className="fixed top-2 left-1/2 -translate-x-1/2 z-50 w-11/12 transition-all duration-500 ease-in-out"
->
+    <nav className="fixed top-2 left-1/2 -translate-x-1/2 z-50 w-11/12 transition-all duration-500 ease-in-out">
       {/* Glow bands */}
       <div
         aria-hidden
@@ -54,20 +48,13 @@ const Navbar = () => {
               </span>
             </Link>
           </div>
-        
-    
 
-          <div
-  className="hidden min-[1025px]:flex flex-1 justify-center transition-all duration-500 space-x-12 text-[13px] text-[#1b1b4b] font-medium tracking-wide"
->
-            
-          {navLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-       
-        
-     className={`
+          <div className="hidden min-[1025px]:flex flex-1 justify-center transition-all duration-500 space-x-12 text-[13px] text-[#1b1b4b] font-medium tracking-wide">
+            {navLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className={`
         relative transition-colors duration-300 ease-in-out
         ${
           pathname === href
@@ -94,10 +81,10 @@ const Navbar = () => {
             `
         }
       `}
-                >
-                  {label}
-                </Link>
-              ))}
+              >
+                {label}
+              </Link>
+            ))}
           </div>
 
           {/* Right CTA */}
@@ -136,12 +123,6 @@ const Navbar = () => {
             >
               Services
             </Link>
-            {/* <Link
-              href="/insights"
-              className="text-[#1b1b4b] font-medium hover:text-[#4f46e5]"
-            >
-              Insights
-            </Link> */}
             <Link
               href="/contact"
               className="block text-center py-3 rounded-xl text-[15px] font-semibold tracking-wide text-white

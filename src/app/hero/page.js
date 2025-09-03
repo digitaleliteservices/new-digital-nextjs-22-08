@@ -9,10 +9,6 @@ const Hero = () => {
       {/* Background Video */}
       <video
         className="absolute top-0  left-0 w-full h-full object-cover"
-        // src="/assets/hero-video19.mp4" //6mb-->waves-->Select
-        // src="/assets/hero-video20.mp4" //5mb-->waves-->Select
-        // src="/assets/hero-video21.mp4" //13mb-->waves-->superb
-        // src="/assets/hero-video22.mp4" //136mb-->waves-->superb
         src="/assets/hero-video25.mp4" //3mb-->superb
         autoPlay
         loop

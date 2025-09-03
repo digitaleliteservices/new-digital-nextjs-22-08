@@ -71,9 +71,6 @@ const WhoWeWorkWith = () => {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-12 md:mb-16">
-          {/* <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] via-[#2C6DF6] to-[#FF8A00]">
-            Who We Work With
-          </h2> */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
             Who We Work With
           </h2>
@@ -112,26 +109,9 @@ const WhoWeWorkWith = () => {
               );
             })}
           </div>
-
-          {/* Center Column - Mandala Video with gradient ring */}
-          {/* <div className="flex justify-center my-6 lg:my-0 lg:flex-1">
-            <div className="rounded-full bg-gradient-to-br from-[#00E5FF] via-[#2C6DF6] to-[#FF8A00] shadow-lg">
-              <video
-                src="/assets/hero-video9.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full bg-white/10"
-              />
-            </div>
-          </div> */}
           <div className="flex justify-center my-6 lg:my-0 lg:flex-1">
             <div className="rounded-full bg-gradient-to-br from-[#00E5FF] via-[#2C6DF6] to-[#FF8A00] shadow-lg p-1">
               <video
-                // src="/assets/hero-video9.mp4"
-                // src="/assets/hero-video16.mp4"
-                // src="/assets/hero-video18.mp4"
                 src="/assets/hero-video30.mp4"
                 autoPlay
                 loop
