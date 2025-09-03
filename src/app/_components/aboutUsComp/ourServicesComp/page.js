@@ -54,7 +54,7 @@ const NodeIcon = () => (
 const services = [
   {
     label: "Digital Marketing",
-    headline: "Be seen. Get chosen. Grow consistently.",
+    headline: "Be seen and Grow consistently",
     blurb:
       "Our goal is to boost brand visibility, engage audiences, and drive measurable growth.",
     points: [
@@ -68,7 +68,7 @@ const services = [
   },
   {
     label: "Graphic Designing",
-    headline: "Designs that speak, persuade, and sell.",
+    headline: "Designs that speak and sell",
     blurb:
       "We enhance brand presence, engage audiences, and communicate your message effectively.",
     points: [
@@ -82,7 +82,7 @@ const services = [
   },
   {
     label: "Web Development",
-    headline: "Fast, secure, and scalable web experiences.",
+    headline: "Fast and secure web experiences",
     blurb:
       "From landing pages to ecommerce, we build responsive, secure, and high-performance sites.",
     points: [
@@ -93,7 +93,7 @@ const services = [
   },
   {
     label: "Digital Services",
-    headline: "Integrations that power your operations.",
+    headline: "Integrations power your operations",
     blurb:
       "Modern tooling to automate, integrate, and maintain your digital stack end-to-end.",
     points: [
@@ -217,7 +217,6 @@ const OurServicesComp = () => {
           <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-amber-300 bg-clip-text text-transparent">
             Elite Solutions
           </span>
-          .
         </h1>
         <p className="mt-6 sm:mt-8 text-sm sm:text-base md:text-lg text-slate-200 max-w-3xl mx-auto">
           Elevating businesses with tailored digital strategies that drive
@@ -251,7 +250,7 @@ const OurServicesComp = () => {
         <h2 className="mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
           We adapt and grow{" "}
           <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-amber-300 bg-clip-text text-transparent">
-            within your unique environment.
+            within your unique environment
           </span>
         </h2>
 
@@ -356,7 +355,6 @@ const OurServicesComp = () => {
               <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-amber-300 bg-clip-text text-transparent">
                 driving ideas into reality
               </span>
-              .
             </h2>
 
             <p className="mt-4 max-w-2xl text-sm sm:text-base md:text-lg text-white/80">
@@ -417,7 +415,7 @@ const OurServicesComp = () => {
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
             Always giving you{" "}
             <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-amber-300 bg-clip-text text-transparent">
-              exactly what you need.
+              exactly what you need
             </span>
           </h3>
           <p className="mt-4 text-white/80 max-w-2xl mx-auto">

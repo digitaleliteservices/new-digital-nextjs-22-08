@@ -172,7 +172,7 @@ const AboutUsComp = () => {
             transition={{ duration: 1.2, delay: 0.3 }}
           >
             We build meaningful experiences <br className="hidden sm:block" />{" "}
-            with relentless focus.
+            with relentless focus
           </motion.h1>
         </div>
       </section>
