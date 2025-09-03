@@ -1,19 +1,31 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import bannerImage from "../../../public/assets/bannerimage.png";
-
+import Loader from "../_components/loader/page";
 const Hero = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Video */}
       <video
         className="absolute top-0  left-0 w-full h-full object-cover"
-        src="/assets/hero-video25.mp4" //3mb-->superb
+        src="/assets/hero-video25new.mp4" //3mb-->superb
+        // src="/assets/hero-video25.mp4" //3mb-->superb
+        // src="/assets/hero-video25.webm" //3mb-->superb
         autoPlay
         loop
         muted
         playsInline
+        preload="auto"
       ></video>
 
       {/* Overlay */}
