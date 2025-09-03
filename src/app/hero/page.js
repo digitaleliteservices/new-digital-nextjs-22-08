@@ -1,35 +1,54 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import bannerImage from "../../../public/assets/bannerimage.png";
-import Loader from "../_components/loader/page";
+import { useState, useRef, useEffect } from "react";
+
 const Hero = () => {
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+  const videoRef = useRef(null);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000);
-    return () => clearTimeout(timer);
+    const video = videoRef.current;
+
+    if (video) {
+      const handleCanPlay = () => {
+        setIsLoading(false);
+      };
+
+      video.addEventListener("canplay", handleCanPlay);
+
+      // Fallback in case canplay doesn't fire
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 3000);
+
+      return () => {
+        video.removeEventListener("canplay", handleCanPlay);
+      };
+    }
   }, []);
 
-  if (loading) return <Loader />;
   return (
     <div className="relative w-full h-screen overflow-hidden">
+      {/* Loading overlay */}
+      {isLoading && (
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-blue-500 z-20 flex items-center justify-center">
+          <div className="animate-pulse text-white">Loading...</div>
+        </div>
+      )}
+
       {/* Background Video */}
       <video
-        className="absolute top-0  left-0 w-full h-full object-cover"
-        src="/assets/hero-video25new.mp4" //3mb-->superb
-        // src="/assets/hero-video25.mp4" //3mb-->superb
-        // src="/assets/hero-video25.webm" //3mb-->superb
+        ref={videoRef}
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src="/assets/hero-video25new.mp4"
         autoPlay
         loop
         muted
         playsInline
         preload="auto"
       ></video>
-
-      {/* Overlay */}
-      {/* <div className="absolute inset-0 bg-black/30"></div> */}
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 md:px-10">
