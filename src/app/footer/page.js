@@ -40,7 +40,7 @@ const Footer = () => {
   return (
     <>
       {showTop && (
-        <div className="fixed bottom-[270px] left-2/2 px-10 transform -translate-x-2/2 z-50">
+        <div className="fixed bottom-[40px] left-2/2 px-10 transform -translate-x-2/2 z-50">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="bg-gradient-to-br from-[#a8b5ff] to-[#1f3ff5] text-orange-300 p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
