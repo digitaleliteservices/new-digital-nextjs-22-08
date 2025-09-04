@@ -9,15 +9,15 @@ const PillDot = () => (
 
 const Spiral = () => {
   return (
-    <section className="relative overflow-hidden bg-[#fafbff] text-slate-900">
+    <section className="relative overflow-hidden text-slate-900">
       {/* soft background noise / vignette */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(80rem 40rem at 50% -10%, rgba(59,130,246,0.08), transparent 60%), radial-gradient(60rem 30rem at 0% 110%, rgba(6,182,212,0.08), transparent 60%), radial-gradient(60rem 30rem at 100% 110%, rgba(245,158,11,0.08), transparent 60%)",
-        }}
+        // style={{
+        //   background:
+        //     "radial-gradient(80rem 40rem at 50% -10%, rgba(59,130,246,0.08), transparent 60%), radial-gradient(60rem 30rem at 0% 110%, rgba(6,182,212,0.08), transparent 60%), radial-gradient(60rem 30rem at 100% 110%, rgba(245,158,11,0.08), transparent 60%)",
+        // }}
       />
 
       {/* Top badge */}

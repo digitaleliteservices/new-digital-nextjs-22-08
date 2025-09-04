@@ -137,10 +137,10 @@ const Footer = () => {
         </div>
 
         {/* Readability overlays (top vignette + brand gradient wash) */}
-        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+        {/* <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(3,7,18,.6),transparent_40%)]" />
           <div className="absolute inset-0 mix-blend-screen opacity-70 bg-[radial-gradient(80%_70%_at_20%_100%,rgba(6,182,212,.35),transparent),radial-gradient(70%_60%_at_80%_100%,rgba(59,130,246,.30),transparent),radial-gradient(90%_80%_at_50%_-20%,rgba(245,158,11,.32),transparent)]" />
-        </div>
+        </div> */}
 
         {/* Content */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
