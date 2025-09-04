@@ -71,7 +71,7 @@ const OurContact = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden pt-32 mt-5 pb-20 ">
+    <div className="min-h-screen flex items-center justify-center bg-[#181625] relative overflow-hidden pt-32  pb-20 ">
       {/* Purple glow at bottom */}
       <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-blue-400/50 to-transparent pointer-events-none" />
 
@@ -90,9 +90,9 @@ const OurContact = () => {
         </div>
 
         {/* Right Side Form Card */}
-        <div className="flex-1 flex flex-col justify-center pt-6">
+        <div className="flex-1 flex flex-col justify-center pt-6 mt-10 mb-5">
           <div className="bg-[#232035] rounded-3xl shadow-2xl p-8 w-full max-w-md mx-auto">
-            <form className="space-y-6" onSubmit={handleSubmit}>
+            <form className="space-y-6 " onSubmit={handleSubmit}>
               {/* Name */}
               <div>
                 <input

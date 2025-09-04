@@ -5,9 +5,9 @@ import DESLogo from "../../../../public/assets/DES_LOGO4.png"; // Adjust path if
 
 const TermsAndConditionComponent = () => {
   return (
-    <div className="min-h-screen text-gray-200 px-6 py-12 mt-15">
+    <div className="min-h-screen text-gray-200 px-6 py-12 bg-black">
       {/* Header */}
-      <div className="text-center max-w-4xl mx-auto">
+      <div className="text-center max-w-4xl mx-auto mt-15">
         <div className="flex justify-center mb-4">
           <Image
             src={DESLogo}
@@ -23,7 +23,7 @@ const TermsAndConditionComponent = () => {
       </div>
 
       {/* Content Card */}
-      <div className="mt-10 bg-[#1a1525] rounded-2xl shadow-lg p-8 max-w-4xl mx-auto leading-relaxed">
+      <div className="mt-10  bg-[#1a1525] rounded-2xl shadow-lg p-8 max-w-4xl mx-auto leading-relaxed">
         <p className="mb-6">
           Website:{" "}
           <a
