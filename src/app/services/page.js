@@ -40,17 +40,16 @@ const Services = () => {
   const [activeService, setActiveService] = useState(null);
 
   return (
-    <section className="relative py-20 text-white">
+    <section className="relative py-20">
       {/* Background Image */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <img
           src="/assets/services_bg_image.avif"
           alt="Services Background"
           className="w-full h-full object-cover"
         />
-        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
-      </div>
+      </div> */}
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6">
@@ -59,7 +58,7 @@ const Services = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold">
             Our Services
           </h2>
-          <p className="text-gray-300 mt-3 max-w-2xl mx-auto">
+          <p className="bg-gradient-to-r from-sky-500 via-indigo-400 to-amber-500 bg-clip-text text-transparent mt-3 max-w-2xl mx-auto">
             Driving growth with technology, design, and strategy.
           </p>
         </div>
@@ -87,7 +86,7 @@ const Services = () => {
               {/* Bottom content */}
               <div className="mt-auto transition-all duration-500 group-hover:-translate-y-3">
                 {/* Description */}
-                <h3 className="text-lg font-semibold mb-4 leading-snug">
+                <h3 className="text-lg font-semibold mb-4 leading-snug text-white">
                   {service.description}
                 </h3>
 
@@ -149,7 +148,7 @@ const Services = () => {
             </span>
 
             {/* Description */}
-            <h2 className="text-2xl font-extrabold mb-4">
+            <h2 className="text-2xl font-extrabold mb-4 text-white">
               {activeService.description}
             </h2>
 

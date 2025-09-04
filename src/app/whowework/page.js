@@ -60,18 +60,18 @@ const WhoWeWorkWith = () => {
   return (
     <section className="relative py-16 md:py-20 bg-white">
       {/* Background Image */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <img
           src="/assets/who-we-work_bg_image.avif"
           alt="Who we work with background"
           className="w-full h-full object-cover"
         />
-      </div>
+      </div> */}
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black">
             Who We Work With
           </h2>
         </div>
