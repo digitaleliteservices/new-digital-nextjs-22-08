@@ -7,7 +7,7 @@ const nextConfig = {
    eslint: {
     ignoreDuringBuilds: true,
   },
-  // trailingSlash: true, 
+  trailingSlash: true, 
   // 👈 Important
 };
 
