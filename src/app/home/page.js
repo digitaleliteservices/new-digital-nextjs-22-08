@@ -10,6 +10,8 @@ import Services from "../services/page";
 import WhoWeWorkWith from "../whowework/page";
 import WhyChooseUs from "../whychooseus/page";
 import { time } from "framer-motion";
+import SplashCursor from '../_components/splashcursor/page'
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -23,6 +25,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
+      <SplashCursor />
       <Hero />
       <Services />
       <WhoWeWorkWith />
