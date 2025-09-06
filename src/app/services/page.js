@@ -60,7 +60,7 @@ const Services = () => {
             Core Services
           </h2>
           <p className="text-gray-300 mt-3 max-w-2xl mx-auto">
-            Driving growth with technology, design, and strategy.
+            Driving growth with technology, design, and strategy
           </p>
         </div>
 

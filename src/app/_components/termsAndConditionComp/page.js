@@ -27,7 +27,7 @@ const TermsAndConditionComponent = () => {
         <p className="mb-6">
           Website:{" "}
           <a
-            href="https://www.digitaleliteservices.in"
+            href="https://digitaleliteservices.in"
             className="text-blue-400 hover:underline"
           >
             www.digitaleliteservices.in

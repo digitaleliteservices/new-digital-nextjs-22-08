@@ -21,13 +21,13 @@ const features = [
     icon: <Users className="w-6 h-6 text-purple-400" />,
     title: "User-Focused Approach",
     description:
-      "Every product we design or develop is built with your users in mind, optimizing for experience, engagement, and retention.",
+      "Every product we design or develop is built with your users in mind, optimizing for experience, engagement, and retention",
   },
   {
     icon: <Activity className="w-6 h-6 text-purple-400" />,
     title: "Results You Can Measure",
     description:
-      "We don't just deliver — we track, analyze, and improve to ensure you're getting the ROI you expect.",
+      "We don't just deliver — we track, analyze, and improve to ensure you're getting the ROI you expect",
   },
 ];
 

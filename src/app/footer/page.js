@@ -168,7 +168,7 @@ const Footer = () => {
             {/* Tagline */}
             <span className="mt-2 text-sm sm:text-base font-medium text-white/80">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-amber-400 bg-clip-text text-transparent">
-                Turning Ambitions into Seamless Digital Success Today.
+                Turning Ambitions into Seamless Digital Success Today
               </span>
             </span>
           </Link>
@@ -276,7 +276,7 @@ const Footer = () => {
           <p className="mt-10 text-center text-[13px] sm:text-sm text-white/65">
             © {new Date().getFullYear()}{" "}
             <span className="font-semibold">Digital Elite Services</span> — All
-            rights reserved.
+            rights reserved
           </p>
         </div>
       </footer>

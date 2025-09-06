@@ -212,14 +212,15 @@ const AboutUsComp = () => {
           initial={{ opacity: 0, y: 24 }}
           animate={serviceInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
           transition={{ duration: 0.8 }}
-          className="text-center z-10 mb-12"
+          className="text-center z-10 mb-10"
         >
-          <span className="px-5 py-2 rounded-full bg-gradient-to-r from-purple-600/40 to-orange-500/40 text-sm sm:text-base inline-block mb-4">
+          <span className="px-16 py-7 rounded-full bg-gradient-to-r from-purple-600/40 to-orange-500/40 text-sm sm:text-base inline-block mb-4">
             ✨ We Offer
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug">
-            Core Service
-          </h2>
+          {/* <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug">
+            Core Service  
+          </h2> */}
+
         </motion.div>
 
         {/* Cards */}

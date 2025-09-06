@@ -42,7 +42,7 @@ const Spiral = () => {
         </h2>
         <p className="mt-4 text-slate-600">
           Our teams secure, align, validate and curate exactly what keeps your
-          work moving.
+          work moving
         </p>
       </div>
 
