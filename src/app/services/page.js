@@ -57,7 +57,7 @@ const Services = () => {
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold">
-            Our Services
+            Core Services
           </h2>
           <p className="text-gray-300 mt-3 max-w-2xl mx-auto">
             Driving growth with technology, design, and strategy.

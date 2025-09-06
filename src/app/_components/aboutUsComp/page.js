@@ -218,7 +218,7 @@ const AboutUsComp = () => {
             ✨ We Offer
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug">
-            One Service
+            Core Service
           </h2>
         </motion.div>
 

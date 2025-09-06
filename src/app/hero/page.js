@@ -42,7 +42,7 @@ const Hero = () => {
       <video
         ref={videoRef}
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/assets/hero-video25new.mp4"
+        src="/assets/hero-video19.mp4"
         autoPlay
         loop
         muted
